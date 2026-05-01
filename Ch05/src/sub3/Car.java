@@ -1,0 +1,33 @@
+package sub3;
+
+public class Car {
+
+	// 속성(멤버 변수)
+	private String name;
+	private int speed;
+	public static int count; // 클래스 변수(정적 변수), 보통 외부에서 클래스 타입으로 접근하기 때문에 public 선언
+	
+	
+	// 생성자
+	public Car(String name, int speed) {
+		this.name = name;
+		this.speed = speed;
+		count++;
+	}
+	
+	
+	// 기능(멤버 메서드)
+	public void speedUp(int speed) {
+		this.speed = speed;
+	}
+	
+	public static int totalCar() { // 클래스 메서드(정적 메서드)
+		return count;
+	}
+	public void show() {
+		System.out.println("차량명 : " + this.name);
+		System.out.println("현재속도 : " + this.speed);
+		System.out.println("차량수 : " + this.count);
+	}
+	
+}
