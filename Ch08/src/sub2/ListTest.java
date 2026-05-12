@@ -57,7 +57,7 @@ public class ListTest {
 		for (int num : list) { 
 			System.out.println(num + ",");
 		}
-		System.out.println("/n");
+		System.out.println("\n");
 		
 		// ---------------------------------
 		// 문자열 리스트 기본
