@@ -21,7 +21,7 @@ public class JDBCTest {
 		
 		
 		try {
-			// 1) 드라이버 로드
+			// 1) 드라이버 로드(생략 가능)
 
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
